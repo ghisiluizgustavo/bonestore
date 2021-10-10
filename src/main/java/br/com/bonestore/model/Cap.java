@@ -16,6 +16,6 @@ public class Cap {
     private Long skuId;
     private String name;
     private String seller;
-    private URL thumbnailHd;
+    private String thumbnailHd;
     private Integer inStock;
 }

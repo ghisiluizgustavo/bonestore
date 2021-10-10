@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ConverterModelDTO {
 
-    public static List<CapDTO> convertModelToDTO(List<Cap> caps){
+    public static List<CapDTO> convertListModelToDTO(List<Cap> caps){
         List<CapDTO> capDTOS = new ArrayList<>();
         caps.forEach(cap -> {
             CapDTO capDTO = new CapDTO();
@@ -20,5 +20,15 @@ public class ConverterModelDTO {
             capDTOS.add(capDTO);
         });
         return capDTOS;
+    }
+
+    public static CapDTO convertModelToDTO(Cap cap){
+        CapDTO capDTO = new CapDTO();
+        capDTO.setName(cap.getName());
+        capDTO.setSeller(cap.getSeller());
+        capDTO.setThumbnailHd(cap.getThumbnailHd());
+        capDTO.setSkuId(cap.getSkuId());
+        capDTO.setInStock(cap.getInStock());
+        return capDTO;
     }
 }
