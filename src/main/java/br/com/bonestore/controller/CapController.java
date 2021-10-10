@@ -1,23 +1,21 @@
 package br.com.bonestore.controller;
 
+import br.com.bonestore.controller.interfaces.CapIntSwagger;
 import br.com.bonestore.dto.CapDTO;
-import br.com.bonestore.model.Cap;
-import br.com.bonestore.repository.CapRepository;
 import br.com.bonestore.service.CapService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import javax.transaction.Transactional;
 import javax.validation.Valid;
-import java.awt.print.Pageable;
 import java.util.List;
 
+@Api("API para gerenciamento de bonés")
 @RestController
 @RequestMapping("/cap")
-public class CapController {
+public class CapController implements CapIntSwagger {
 
     @Autowired
     private CapService capService;
