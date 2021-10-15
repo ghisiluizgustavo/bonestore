@@ -1,4 +1,4 @@
-package br.com.bonestore.config;
+package br.com.bonestore.config.swagger;
 
 import jdk.javadoc.doclet.Doclet;
 import org.springframework.context.annotation.Bean;
