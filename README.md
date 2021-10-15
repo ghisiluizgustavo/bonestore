@@ -20,4 +20,16 @@ The following guides illustrate how to use some features concretely:
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
+<hr/>
 
+# About the application
+
+### Rest API BoneStore
+
+API with caps management (GET, POST) and authorization with JWT.
+
+to see all endpoints access swagger documentation: 
+
+####[https://bonestore.herokuapp.com/swagger-ui.html](https://bonestore.herokuapp.com/swagger-ui.html)
+
+~~It is currently impossible to create an account. To authenticate use email: luiz.brabo@email.com password: 123456. Harddddd!~~
